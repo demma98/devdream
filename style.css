@@ -32,8 +32,15 @@ p {
     font-size: 20px;
     margin-right: auto;
     margin-left: 32px;
-    max-width: 600px;
+    max-width: 700px;
     padding: 10px;
+}
+
+img {
+    margin-right: auto;
+    margin-left: 5%;
+    max-width: 90%;
+    height: auto;
 }
 
 nav {
@@ -41,6 +48,18 @@ nav {
     margin-left: auto;
     max-width: 600px;
     padding: 10px;
+}
+
+.nav_title{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav_title:hover{
+    text-shadow: 0 0 15px #f3def3;
+    h2{
+        background-color: #240024
+    }
 }
 
 .nav_element{
@@ -74,6 +93,12 @@ nav {
     margin-left: auto;
     max-width: 800px;
     padding: 2px;
+}
+
+.img_footer{
+    margin-right: auto;
+    margin-left: 7%;
+    font-style: italic;
 }
 
 /* --lightmode-- */
