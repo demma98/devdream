@@ -40,6 +40,10 @@ p {
     padding: 10px;
 }
 
+li {
+    margin-left: 32px;
+}
+
 img {
     margin-right: auto;
     margin-left: 5%;
@@ -132,7 +136,7 @@ nav {
         padding: 0px;
     }
 
-    p {
+    p, li {
         margin-left: 0px;
     }
 
@@ -141,8 +145,14 @@ nav {
         margin-right: 2px;
     }
 
+    .navbar {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .nav_element {
         font-size: 14px;
-        padding: 1px;
+        padding: 8px;
     }
 }
