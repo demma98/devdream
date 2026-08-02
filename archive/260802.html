@@ -1,0 +1,51 @@
+---
+title: "coding for the gameboy"
+date: 2026-08-02
+thumbnail: "/assets/blog_images/260802 derk.jpg"
+thumbnail_alt: "derk title screen on a gameboy"
+---
+
+{% include arch_header.html %}
+
+<link rel="stylesheet" href="{{ 'about/style.css' | relative_url }}">
+
+<p>
+Some time ago I tried to program for the GameBoy.
+Tho I managed to make a working tic-tac-toe game,
+ it only worked on the GameBoy Color.
+This time I want to make an original game that works on the original Gameboy.
+</p>
+
+<p>
+While I prepared the project files,
+ I started thinking what type of game I wanted to make.
+I wanted to make an original game, but all I could think of was making ports.
+First I considered to port "Stay Frosty" for the Atari 2600, 
+ but after considering the prite limitations I was going to have to overcome
+ I decided on porting X16-Maze for the Commander X16 instead.
+</p>
+
+<p>
+I started making adjustments to my way of programming in assembly.
+I used to write everything in a single file, and to repeat a lot of functionality.
+I had to learn how to use multiple files for a single project,
+ as well as to implement calls to functions I had to design.
+Aside from the ease that comes from being able to sepparate the project in files and folders,
+  I could also work with text without many complications.
+All of the on-screen text is converted from ASCII to my custom font tiles
+ (the font is based on Castlevania 3's one).
+The custom copy routine also allows for new line characters,
+ so it doesn't have to copy each line individually.
+</p>
+
+<img src="{{ "/assets/blog_images/260802 code derk.jpg" | relative_url }}" alt="derk assembly code">
+<div class="img_footer">derk assembly code</div>
+
+<p>
+I hope to continue with this project untill at least I've got a playable game.
+If you're interested in following the project,
+ <a href="https://github.com/demma98/gb-derk" class="link_github">here's the github repo.</a>
+</p>
+
+{% include arch_footer.html %}
+
