@@ -16,12 +16,24 @@
     <p>
       here you'll find all of the previous blog entries ;3
       <br>
-    </p>
-      <h1>2026</h1>
-    <p>
+
+      {% assign p_year_t = "" %}
+      {% assign p_month_t = "" %}
+      
       {% for archived in archive_pages %}
-      <a href="{{archived.url | relative_url}}" class="archive_link">{{archived.date}} {{archived.title}}</a>
-      <br>
+        {% assign p_year = archived.date | date: "%Y" %}
+        {% assign p_month = archived.date | date: "%B" %}
+
+        {% if p_year_t != p_year %}
+          {% assign p_year_t = p_year %}
+          {% assign p_month_t = "" %}
+        </p>
+          <h1>{{ p_year }}</h1>
+        <p>
+        {% endif %}
+      
+        <a href="{{archived.url | relative_url}}" class="archive_link">{{archived.date}} {{archived.title}}</a>
+        <br>
       {% endfor %}
     </p>
   </div>
